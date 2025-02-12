@@ -1,6 +1,7 @@
-.widh{
-    width: 90%;
-    height: 90%;
+.widh-logo{
+   width: 20%;
+   height: auto;
+   
 }
 .pad{
     padding-right: 70%;
@@ -11,7 +12,32 @@
 .size{
     font-size: 150%;
 }
-.taille{
-    width: 400px;
-    height: 400px;
+
+.background{
+    background-color: #fcdb19;
+}.si-ze{
+    width: 450px;
+    height: 450px;
+    margin-left: 18%;
+}
+.shadow{
+    text-align: center;
+}
+.sizee{
+    font-size: 110%;
+}
+.big{
+    font-style: oblique;
+    font-size: 400%;
+}
+.souligne{
+    text-decoration-line: underline;
+}
+.font-size{
+    font-weight: 500;
+    font-size: 150%;
+    text-align: justify;
+}
+.mar{
+    margin-left: 10%;
 }

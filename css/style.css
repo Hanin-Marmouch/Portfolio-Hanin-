@@ -10,15 +10,15 @@
     color: #fcdb19;
 }
 .size{
-    font-size: 150%;
+    font-size: 200%;
 }
 
 .background{
     background-color: #fcdb19;
 }.si-ze{
-    width: 450px;
-    height: 450px;
-    margin-left: 18%;
+    width: 800px;
+    height: auto;
+    margin-left: 30;
 }
 .shadow{
     text-align: center;
@@ -28,16 +28,88 @@
 }
 .big{
     font-style: oblique;
-    font-size: 400%;
+    font-size: 600%;
 }
 .souligne{
     text-decoration-line: underline;
 }
 .font-size{
-    font-weight: 500;
     font-size: 150%;
     text-align: justify;
 }
 .mar{
     margin-left: 10%;
+}
+.small{
+    width: 600px;
+    height: auto;
+    margin-left: 10%;
+}
+.black{
+    color: rgb(0, 0, 0);
+}
+.font{
+    background: #f8f5e5;
+}
+.mg{
+    margin-left: 5%;
+}
+.pad-l{
+    margin-right: 90%;
+}
+.mg-l{
+    margin-left: 15%;
+}
+.black-big{
+        font-style: oblique;
+        font-size: 500%;
+}
+.s{
+    font-size: 300%;
+}
+.background-jau{
+    background-color: #ffe11c;
+}
+.im-g{
+    width: 95%;
+    height: auto;
+}
+.mg-P{
+    margin-left: 10%;  
+}
+.mg-B{
+    margin-right: 10%;
+}
+.im-O{
+    width: 140%;
+    height: auto;
+}.im-N{
+    width: 120%;
+    height: auto;
+}
+.im-S{
+    width: 100%;
+    height: auto;
+}
+.im-L{
+    width: 100%;
+    height: auto;
+    margin-left: 20%;   
+}
+.im-Z{
+    width: 120%;
+    height: auto;
+}
+.cotour{
+    border-color: #000000;
+}
+.white{
+    color: #f8f5e5;
+}
+.btnjaune{
+    background: #fcdb19;
+    outline: none;
+    border-radius: 0%;
+}.none{
+    text-decoration: none;
 }

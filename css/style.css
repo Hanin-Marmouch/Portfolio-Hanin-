@@ -28,7 +28,7 @@
 }
 .big{
     font-style: oblique;
-    font-size: 600%;
+    font-size: 580%;
 }
 .souligne{
     text-decoration-line: underline;
@@ -112,4 +112,7 @@
     border-radius: 0%;
 }.none{
     text-decoration: none;
+}
+.colrfont{
+    color: #f8f5e5;
 }

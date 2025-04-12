@@ -37,7 +37,6 @@
                     <!-- Navbar -->
                     <div class="col-6 col-md-7 mt-3">
                       <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
-                        <!-- Toggler only visible on mobile -->
                         <button
                           class="navbar-toggler ms-auto"
                           type="button"
@@ -94,37 +93,24 @@
                   </div>
                 </div>
               </section>
-              
-              <!-- Custom JavaScript (Manual Toggling) -->
               <script>
                 document.addEventListener("DOMContentLoaded", function() {
-                  // Get the toggler button and collapse menu
                   const navbarToggler = document.getElementById('navbar-toggler');
                   const navbarCollapse = document.getElementById('navbarNav');
-                  const navLinks = document.querySelectorAll('.nav-link'); // Get all nav links
-              
-                  // Listen for clicks on the toggler button
-                  navbarToggler.addEventListener('click', function() {
-                    // Toggle the 'collapse' class manually
+                  const navLinks = document.querySelectorAll('.nav-link'); 
+                                    navbarToggler.addEventListener('click', function() {
                     navbarCollapse.classList.toggle('collapse');
-                    navbarCollapse.classList.toggle('show');  // Add or remove 'show' class to make the navbar visible
-              
-                    // Optional: Ensure the links keep their colors after toggle
+                    navbarCollapse.classList.toggle('show');
                     navLinks.forEach(link => {
-                      link.classList.add('yellow'); // Reapply the 'yellow' class to the links after toggle
+                      link.classList.add('yellow');
                     });
                   });
                 });
               </script>
-              
-              <!-- Bootstrap 5 CSS (No JS included) -->
               <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-              
-              <!-- Custom CSS for responsiveness -->
               <style>
-                /* Custom Colors */
                 .yellow {
-                  color: #FFD43B; /* Yellow color for the text */
+                  color: #FFD43B;
                 }
               
                 @media (max-width: 767px) {
@@ -269,7 +255,6 @@
            
                 <!-- Start Projects Section -->
                 <k id="Projects">
-                    <!-- STYLE POUR UNIFORMISER LES IMAGES ET L’ÉQUILIBRE VISUEL -->
                     <style>
                         .project-item {
                             height: 100%;
@@ -281,7 +266,7 @@
                         .project-item .image-container {
                             position: relative;
                             width: 100%;
-                            height: 300px; /* Hauteur fixe pour toutes les images */
+                            height: 300px; 
                             overflow: hidden;
                             border-radius: 10px;
                         }
@@ -289,7 +274,7 @@
                         .project-item .image-container img {
                             width: 100%;
                             height: 100%;
-                            object-fit: cover; /* Recadrage parfait sans déformation */
+                            object-fit: cover; 
                         }
                 
                         .project-title {
@@ -418,11 +403,9 @@
                         object-fit: cover;
                         transition: all 0.5s ease-in-out;
                     }
-                
-                    /* 👉 Quand la souris passe, on voit toute l’image */
                     .project-item .image-container:hover img {
                         object-fit: contain;
-                        background-color: #000; /* pour les bords s’il y en a */
+                        background-color: #000; 
                     }
                 
                     .project-title {
@@ -451,7 +434,7 @@
                 
                 <div class="row justify-content-center bg-dark">
                     <div class="col-8">
-                        <!-- Formulaire avec action vide, car on va envoyer les données avec JS -->
+                       
                         <form id="contact-form">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Your Name</label>
@@ -470,27 +453,6 @@
                     </div>
                 </div>
             </div>
-        
-            <!-- Inclus EmailJS JS SDK -->
-            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    // Initialise EmailJS avec ton User ID
-    emailjs.init("service_t8xu8em");  // Remplace par ton User ID de EmailJS
-
-    // Écoute l'événement de soumission du formulaire
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();  // Empêche l'envoi du formulaire de manière classique
-
-        // Envoie le formulaire à EmailJS
-        emailjs.sendForm('Google', 'template_zmwgxu5', this)  // Remplace par ton Service ID et Template ID
-            .then(function(response) {
-                alert('Message sent successfully!');
-            }, function(error) {
-                alert('Failed to send message. Please try again later!');
-            });
-    });
-</script>
-
         </k>
         
         
@@ -509,17 +471,5 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
     </body>
 </html>

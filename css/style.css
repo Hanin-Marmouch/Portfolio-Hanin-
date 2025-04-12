@@ -284,27 +284,20 @@ size: 20%;
     height: 40%;
   
 }
-/* Project Image Container for Hover Effect */
 .image-container {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
 }
-
-/* Project Images Styling */
 .hov-img {
     width: 100%;
     height: 250px;
-    object-fit: cover; /* Keeps the aspect ratio and fills the space */
+    object-fit: cover; 
     transition: transform 0.3s ease;
 }
-
-/* Hover Effect on the Entire Image */
 .image-container:hover .hov-img {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
-
-/* Overlay Styling */
 .overlay {
     position: absolute;
     top: 50%;
@@ -358,12 +351,11 @@ h1.yellow {
 .mmgg{
     margin-right: 12%;
 }
-/* Liens dans la navbar */
 .yellow {
-    color: #f9c74f; /* Jaune */
+    color: #f9c74f;
     text-decoration: none;
-    font-size: 18px; /* Taille de police des liens */
-    font-weight: 600; /* Police en gras */
+    font-size: 18px; 
+    font-weight: 600;
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
@@ -374,69 +366,56 @@ h1.yellow {
     margin-right: 30px; 
     font-size: 22px;
 } 
-/* Général - Mise en page */
 .about-section {
-    background-color: #f4f4f9; /* Fond de la section */
-    padding: 30px 0; /* Réduire les espaces en haut et en bas */
+    background-color: #f4f4f9; 
+    padding: 30px 0; 
 }
-
-/* Style du titre principal */
 .yellow-biiiiig {
-    color: #FFD43B; /* Jaune pour le titre */
-    font-size: 3rem; /* Taille plus grande pour le titre */
+    color: #FFD43B; 
+    font-size: 3rem;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 10px; /* Réduire l'espace sous le titre */
+    margin-bottom: 10px;
 }
 
 .yellow-biiiiig i {
-    margin-left: 10px; /* Espacement entre l'icône et le texte */
-    font-size: 1.5rem; /* Taille de l'icône */
+    margin-left: 10px;
+    font-size: 1.5rem;
 }
-
-/* Sous-titre */
 .s {
-    font-size: 1.5rem; /* Taille du sous-titre */
+    font-size: 1.5rem;
     font-weight: 400;
     color: #333;
-    margin-top: 5px; /* Réduire l'espace sous le titre */
+    margin-top: 5px;
 }
 
 .s a {
-    color: #FFD43B; /* Jaune pour le lien */
+    color: #FFD43B; 
     font-weight: 600;
     text-decoration: none;
 }
 
 .s a:hover {
-    text-decoration: underline; /* Ajoute un effet de survol */
+    text-decoration: underline;
 }
-
-/* Image de fond */
 .small {
     width: 100%;
     height: auto;
 }
-
-/* Espacement des colonnes */
 .col-5 {
-    padding-right: 20px; /* Espacement modéré à droite */
+    padding-right: 20px; 
 }
 
 .col-4 {
-    padding-left: 20px; /* Espacement modéré à gauche */
+    padding-left: 20px;
 }
-
-/* Texte principal */
 .font-size {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #000000; /* Couleur légèrement plus foncée pour le texte */
+    color: #000000; 
 }
-
-/* Bouton */
 .btn.btn-dark {
     background-color: #000000;
     color: white;
@@ -446,21 +425,19 @@ h1.yellow {
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
-    margin-top: 10px; /* Réduire l'espace au-dessus du bouton */
+    margin-top: 10px;
 }
 
 .btn.btn-dark:hover {
-    background-color: #000000; /* Couleur au survol */
+    background-color: #000000; 
 }
 
 .sizee {
     font-size: 1rem;
 }
-
-/* Séparation horizontale */
 hr {
-    margin-top: 30px; /* Réduire l'espace au-dessus de la ligne */
-    border-top: 2px solid #FFD43B; /* Ligne jaune */
+    margin-top: 30px; 
+    border-top: 2px solid #FFD43B; 
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -525,24 +502,237 @@ hr {
 }
 
 
-
-/* Effet au survol pour les cartes */
 .specialty-card:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    background-color: #FFD43B; /* Changer la couleur de fond lors du survol */
+    background-color: #FFD43B; 
 }
-
-/* Effet sur les icônes */
 .specialty-icon:hover {
     transform: rotate(15deg);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 767px) {
     .widh-logo {
-      width: 70%; /* Tu peux ajuster à 90% ou 100% si tu veux plus grand */
+      width: 70%;
       display: block;
-      margin: 0 auto; /* centrer le logo */
+      margin: 0 auto;
     }
   }
+  @media (max-width: 767px) {
+  .about-section .row {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-section .col-5,
+  .about-section .col-4 {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+
+  .about-section img.backgroundimg {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-section h1.s {
+    font-size: 1.4rem;
+  }
+
+  .about-section p.font-size {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .about-section .button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .about-section .mmgg {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+    .specialties .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .specialties .col {
+        width: 100%; 
+        margin-bottom: 20px; 
+        padding: 0 10px;
+    }
+
+    .specialty-card {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #F8F5E5;
+    }
+
+    .specialty-icon {
+        padding: 15px;
+        border-radius: 50%;
+    }
+
+    .specialty-card h2 {
+        font-size: 1.5rem; 
+    }
+
+    .specialty-description {
+        font-size: 1rem; 
+    }
+    .specialties h1 {
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-toggler {
+      border-color: #FFD43B; /* Par exemple, changer la couleur de la bordure */
+    }
+  
+    .navbar-nav {
+      text-align: center; /* Centrer les éléments du menu sur mobile */
+    }
+  
+    .navbar-collapse {
+      text-align: center; /* Centrer les éléments du menu dans la version mobile */
+    }
+  }
+  .navbar a {
+    .navbar a {
+        padding: 0 25px;  /* Augmente la valeur du padding pour plus d'espace entre les liens */
+      }
+      
+  }
+  .navbar a {
+    color: #FFD43B; /* Assure-toi que la couleur du texte reste blanche, par exemple */
+    letter-spacing: 3px;  /* Augmente l'espacement */
+  }
+  
+  .navbar a {
+    color: #FFD43B; /* Couleur par défaut des liens en blanc */
+    letter-spacing: 3px; /* Augmenter l'espacement entre les liens */
+    transition: color 0.3s ease; /* Pour une transition fluide de la couleur */
+  }
+  
+  .navbar a:hover {
+    color: #fff; /* Couleur blanche au survol (ne change pas) */
+  }
+  #Projects {
+    padding-top: 50px; /* Espacement au-dessus de la section */
+  }
+  
+  #Projects .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  #Projects h1 {
+    background-color: #000000;
+    color: #FFD43B;
+    padding: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espacement des lettres pour une meilleure lisibilité */
+  }
+  
+  .project-item .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Arrondir les coins des images */
+  }
+  
+  .project-item .img-fluid {
+    width: 100%; /* Assurer que les images remplissent leur conteneur */
+    height: auto;
+    transition: transform 0.3s ease; /* Effet de zoom sur l'image */
+  }
+  
+  .project-item .img-fluid:hover {
+    transform: scale(1.05); /* Zoom léger sur l'image au survol */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fond sombre pour améliorer la lisibilité du texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-item:hover .overlay {
+    opacity: 1; /* Afficher l'overlay au survol */
+  }
+  
+  .project-title {
+    color: #FFD43B;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .yellow-line {
+    border-top: 3px solid #FFD43B; /* Ligne de séparation jaune */
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .project-item {
+      margin-bottom: 20px; /* Réduire l'espacement entre les éléments sur petits écrans */
+    }
+  
+    .project-title {
+      font-size: 16px; /* Réduire la taille du texte sur les petits écrans */
+    }
+  }
+/* Équilibrage des project-items */
+.project-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Optionnel : un petit padding entre les images si tu veux plus d’aération */
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Overlay pour uniformiser l'affichage */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFD43B;
+    border-radius: 0 0 10px 10px;
+}
+  
   

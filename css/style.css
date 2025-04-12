@@ -3,14 +3,21 @@
    height: auto;
    
 }
+.t-f{
+size: 20%;
+}
 .pad{
-    padding-right: 70%;
+    padding-right: 80%;
 }
 .yellow{
     color: #fcdb19;
 }
 .size{
-    font-size: 200%;
+    font-size: 150%;
+}
+.si{
+    width: 3% ;
+    height: auto; 
 }
 
 .background{
@@ -24,7 +31,7 @@
     text-align: center;
 }
 .sizee{
-    font-size: 110%;
+    font-size: 100%;
 }
 .big{
     font-style: oblique;
@@ -34,8 +41,9 @@
     text-decoration-line: underline;
 }
 .font-size{
-    font-size: 150%;
+    font-size: 140%;
     text-align: justify;
+    font-weight: bolder;
 }
 .mar{
     margin-left: 10%;
@@ -60,9 +68,14 @@
 .mg-l{
     margin-left: 15%;
 }
-.black-big{
+.yellow-big{
         font-style: oblique;
         font-size: 500%;
+}
+.yellow-biiiiig{
+    font-style: oblique;
+    font-size: 500%;
+    color: #ffe11c;
 }
 .s{
     font-size: 300%;
@@ -116,3 +129,420 @@
 .colrfont{
     color: #f8f5e5;
 }
+.button:hover {
+     color: rgb(237, 225, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+  }
+  .button-b:hover{
+    background: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: 900%;
+  }
+  .accueil:hover{
+    color: #f8f5e5;
+    font-size: 18px;
+    text-decoration: none;
+ }
+ .hove:hover{
+    background: #000000;
+    color: #f8f5e5;
+    width: 90%;
+    height: auto;
+ }
+.hover-sp:hover{
+    background-color: #f8f5e5; 
+    border: 7px solid #000000;
+  }
+.hover-sc:hover{
+    border: 7px solid #fcdb19;
+  }
+
+  .hov-img:hover {
+    transform: scale(1.2);
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  .hov-im:hover {
+    transform: scale(1.2);
+    width: 550px;
+    height: auto;
+   padding-left: 20%;
+  }
+  .GGG{
+    margin-left: 2%;
+  }
+.contact-section {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 0;
+}
+.contact-section h1 {
+    font-size: 3rem;
+    color: #FFD43B;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-section .yellow {
+    color: #FFD43B;
+}
+
+.inputll {
+    border-radius: 8px;
+    border: 2px solid #FFD43B;
+    
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.inputll {
+    outline: none;
+    border-color: #FFD43B;
+}
+.btn-yellow {
+    background-color: #FFD43B;
+    border: none;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+    background-color: #f3c200;
+}
+.contact-info {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.contact-info i {
+    color: #FFD43B;
+}
+
+.contact-info i:hover {
+    color: #f3c200;
+}
+.project-item {
+    position: relative;
+    
+}
+
+.project-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+  
+   
+}
+
+.project-item:hover .overlay {
+    opacity: 1;
+}
+
+.project-title {
+    color: #FFD43B;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.photo-container {
+    transform: scale(1.0); 
+    box-shadow: 0 9px 10px rgb(227, 170, 13);
+    width: 100%;
+    height: 40%;
+  
+}
+.photo-container-B {
+    transform: scale(1.0); 
+    box-shadow: 0 9px 10px rgb(0, 0, 0);
+    width: 100%;
+    height: 40%;
+  
+}
+/* Project Image Container for Hover Effect */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Project Images Styling */
+.hov-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Keeps the aspect ratio and fills the space */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on the Entire Image */
+.image-container:hover .hov-img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    padding: 15px;
+}
+
+h1.yellow {
+    color: #FFD43B;
+    font-size: 2.5rem;
+}
+
+
+.yellow-line {
+    border-top: 2px solid #FFD43B;
+    width: 60px;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+}
+.yellow big{
+    color: #f3c200;
+    font-size: 900%;
+}
+.mmgg{
+    margin-right: 12%;
+}
+/* Liens dans la navbar */
+.yellow {
+    color: #f9c74f; /* Jaune */
+    text-decoration: none;
+    font-size: 18px; /* Taille de police des liens */
+    font-weight: 600; /* Police en gras */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+
+.si {
+    margin-right: 30px; 
+    font-size: 22px;
+} 
+/* Général - Mise en page */
+.about-section {
+    background-color: #f4f4f9; /* Fond de la section */
+    padding: 30px 0; /* Réduire les espaces en haut et en bas */
+}
+
+/* Style du titre principal */
+.yellow-biiiiig {
+    color: #FFD43B; /* Jaune pour le titre */
+    font-size: 3rem; /* Taille plus grande pour le titre */
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px; /* Réduire l'espace sous le titre */
+}
+
+.yellow-biiiiig i {
+    margin-left: 10px; /* Espacement entre l'icône et le texte */
+    font-size: 1.5rem; /* Taille de l'icône */
+}
+
+/* Sous-titre */
+.s {
+    font-size: 1.5rem; /* Taille du sous-titre */
+    font-weight: 400;
+    color: #333;
+    margin-top: 5px; /* Réduire l'espace sous le titre */
+}
+
+.s a {
+    color: #FFD43B; /* Jaune pour le lien */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.s a:hover {
+    text-decoration: underline; /* Ajoute un effet de survol */
+}
+
+/* Image de fond */
+.small {
+    width: 100%;
+    height: auto;
+}
+
+/* Espacement des colonnes */
+.col-5 {
+    padding-right: 20px; /* Espacement modéré à droite */
+}
+
+.col-4 {
+    padding-left: 20px; /* Espacement modéré à gauche */
+}
+
+/* Texte principal */
+.font-size {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #000000; /* Couleur légèrement plus foncée pour le texte */
+}
+
+/* Bouton */
+.btn.btn-dark {
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px; /* Réduire l'espace au-dessus du bouton */
+}
+
+.btn.btn-dark:hover {
+    background-color: #000000; /* Couleur au survol */
+}
+
+.sizee {
+    font-size: 1rem;
+}
+
+/* Séparation horizontale */
+hr {
+    margin-top: 30px; /* Réduire l'espace au-dessus de la ligne */
+    border-top: 2px solid #FFD43B; /* Ligne jaune */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.specialties {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f4f4f4;
+}
+
+.specialties h1 {
+    color: #FFD43B;
+   
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.specialties h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Ajustement de la taille de l'icône dans les titres */
+.specialties i {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: #FFD43B;
+}
+
+
+.specialties .col {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+ 
+}
+
+/* Container photo */
+.specialties .service-box {
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+/* Colonnes avec fond différent */
+.specialties .dark-bg {
+    background-color: #333;
+    color: #fff;
+}
+
+.specialties .light-bg {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+
+
+/* Effet au survol pour les cartes */
+.specialty-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: #FFD43B; /* Changer la couleur de fond lors du survol */
+}
+
+/* Effet sur les icônes */
+.specialty-icon:hover {
+    transform: rotate(15deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 767px) {
+    .widh-logo {
+      width: 70%; /* Tu peux ajuster à 90% ou 100% si tu veux plus grand */
+      display: block;
+      margin: 0 auto; /* centrer le logo */
+    }
+  }
+  

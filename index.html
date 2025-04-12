@@ -23,142 +23,361 @@
 
     <body>
         <header>
-            <!-- place navbar here -->
         </header>
         <main>
-            <section id="Acceuil">
+            <!-- Start Acceuil Section -->
+            <section id="Acceuil" class="hero">
+                <div class="container-fluid font">
+                  <div class="row align-items-center">
+                    <!-- Logo -->
+                    <div class="col-6 col-md-5 mt-3">
+                      <img src="images/Logo png fastie design.png" class="widh-logo mg-l" alt="Logo">
+                    </div>
+              
+                    <!-- Navbar -->
+                    <div class="col-6 col-md-7 mt-3">
+                      <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0">
+                        <!-- Toggler only visible on mobile -->
+                        <button
+                          class="navbar-toggler ms-auto"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarNav"
+                          aria-controls="navbarNav"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                        >
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+              
+                        <!-- Navbar Links -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                              <a href="#Acceuil" class="nav-link yellow"><i class="fa-solid fa-house si"></i> Acceuil</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#About" class="nav-link yellow"><i class="fa-solid fa-user si"></i> About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#Projects" class="nav-link yellow"><i class="fa-solid fa-folder-open si"></i> Projects</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#MySpecialties" class="nav-link yellow"><i class="fa-solid fa-cogs si"></i> My Specialties</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#Contact" class="nav-link yellow"><i class="fa-solid fa-envelope si"></i> Contact</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+              
+                  <!-- Content -->
+                  <div class="row">
+                    <div class="col-12 col-md-6 mt-5 text-center text-md-start">
+                      <h1 class="yellow-big">
+                        Hello! <i class="fa-solid fa-hand-sparkles fa-shake fa-xs" style="color: #FFD43B;"></i>
+                      </h1>
+                      <h1>I'm Hanin Marmouch</h1>
+                      <h2>Graphic Designer, Based in Tunisia</h2>
+                      <p class="mt-4 size shadow mg background hove text">
+                        Graphic Designer - Web Designer - Motion Designer - UI/UX Designer - Web Developer - Community Manager
+                      </p>
+                      <a href="#Projects" class="btn sizee mt-3 mb-5 cotour button-b"><i class="fa-solid fa-briefcase"></i> Projects</a>
+                      <a href="#MySpecialties" class="btn btn-dark sizee mb-5 mt-3 button"><i class="fa-solid fa-cogs"></i> My Specialties</a>
+                    </div>
+              
+                    <div class="col-12 col-md-6 text-center">
+                      <img src="images/splash-yellow-dye.png" class="si-ze mb-5 pad-l img-fluid" alt="Splash Design">
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <!-- Bootstrap JS -->
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+              
+              <style>
+                /* === Responsive adjustments === */
+                @media (max-width: 767px) {
+                  .navbar-nav .nav-link {
+                    font-size: 14px;
+                    padding: 6px 10px;
+                  }
+              
+                  .navbar-toggler {
+                    font-size: 0.9rem;
+                    padding: 4px 8px;
+                    margin-left: auto;
+                  }
+              
+                  .row.align-items-center {
+                    margin-bottom: 10px; /* add space between logo and navbar on mobile */
+                  }
+              
+                  /* Garde la taille originale du logo */
+                  .widh-logo {
+                    max-width: 100%;
+                    height: auto;
+                  }
+                }
+              
+                /* === Desktop - no change === */
+                @media (min-width: 768px) {
+                  .navbar-nav .nav-link {
+                    font-size: 16px;
+                  }
+                }
+              </style>
+              
+            
+            
+            <!-- End Acceuil Section -->
+        
+            <!-- Start About Section -->
+            <k id="About" class="about-section">
+                <div class="container-fluid font">
+                    <div class="row">
+                        <div class="col-5 mt-3 ">
+                            <img src="images/decorative-yellow-watercolor-splash-brush-stroke-design-vector.png" class="small backgroundimg " >
+                        </div>
+                        <div class="col-4 mar mt-3 mb-4 mmgg">
+                            <h1 style="background-color: #000000; color: #FFD43B; padding: 10px; text-align: center;">About Me <i class="fa-regular fa-user fa-beat-fade fa-2xs" style="color: #FFD43B;"></i></h1>
+                            <h1 class="s mt-2">I am Hanin Marmouch, <a>Graphic Designer</a></h1>
+                            <p class="font-size  mt-4">
+                                Passionate about creation and design, with 3 years of practice at the Higher Institute of Fine Arts and my training in computer graphics, 
+                                I had the opportunity to work on various projects that helped me deepen and enrich my skills in design, digital marketing, and web development.
+                            </p>
+                            <a href="#Contact" class="btn btn-dark sizee mt-3 cotour button"><i class="fa-solid fa-envelope"></i> Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </section >
+            <!-- End About Section -->
+
+            <!-- Start MySpecialties Section -->
+            <k id="MySpecialties" class="specialties">
+                <div class="container-fluid font">
+                    <div class="row justify-content-center ">
+                        <h1 class="text-center" style="background-color: #000000; color: #FFD43B; padding: 10px; border-radius: 10px; text-transform: uppercase;">
+                            My Specialties 
+                            <i class="fa-regular fa-folder fa-bounce fa-xs" style="color: #1C1C1C;"></i>
+                        </h1>
+                    </div>
+                    <div class="row mt-3">
+                        <!-- Graphic Design -->
+                        <div class="col justify-content-center">
+                            <div class="specialty-card text-center hover-effect" style="background-color: #F8F5E5; padding: 20px; border-radius: 15px;">
+                                <div class="specialty-icon" style="background-color: #FFD43B; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
+                                    <i class="fa-solid fa-pen-nib fa-3x" style="color: #1C1C1C;"></i>
+                                </div>
+                                <h2 style="color: #1C1C1C; font-size: 1.75rem; font-weight: bold;">Graphic Design</h2>
+                                <p class="specialty-description" style="color: #1C1C1C;">Creating stunning visuals that communicate effectively, from branding to advertisements.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Web Development -->
+                        <div class="col justify-content-center">
+                            <div class="specialty-card text-center hover-effect" style="background-color: #F8F5E5; padding: 20px; border-radius: 15px;">
+                                <div class="specialty-icon" style="background-color: #000000; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
+                                    <i class="fa-solid fa-code fa-3x" style="color: #FFD43B;"></i>
+                                </div>
+                                <h2 style="color: #1C1C1C; font-size: 1.75rem; font-weight: bold;">Web Development</h2>
+                                <p class="specialty-description" style="color: #1C1C1C;">Building responsive websites with cutting-edge technologies for a seamless user experience.</p>
+                            </div>
+                        </div>
+            
+                        <!-- UX/UI Design -->
+                        <div class="col justify-content-center">
+                            <div class="specialty-card text-center hover-effect" style="background-color: #F8F5E5; padding: 20px; border-radius: 15px;">
+                                <div class="specialty-icon" style="background-color: #FFD43B; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
+                                    <i class="fa-brands fa-figma fa-3x" style="color: #1C1C1C;"></i>
+                                </div>
+                                <h2 style="color: #1C1C1C; font-size: 1.75rem; font-weight: bold;">UX/UI Design</h2>
+                                <p class="specialty-description" style="color: #1C1C1C;">Designing user-friendly interfaces with a focus on improving user experience and engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <!-- Digital Marketing -->
+                        <div class="col justify-content-center">
+                            <div class="specialty-card text-center hover-effect" style="background-color: #F8F5E5; padding: 20px; border-radius: 15px;">
+                                <div class="specialty-icon" style="background-color: #FFD43B; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
+                                    <i class="fa-solid fa-chart-simple fa-3x" style="color: #1C1C1C;"></i>
+                                </div>
+                                <h2 style="color: #1C1C1C; font-size: 1.75rem; font-weight: bold;">Digital Marketing</h2>
+                                <p class="specialty-description" style="color: #1C1C1C;">Strategizing digital campaigns to drive targeted traffic and boost conversions.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Web Design -->
+                        <div class="col justify-content-center">
+                            <div class="specialty-card text-center hover-effect" style="background-color: #F8F5E5; padding: 20px; border-radius: 15px;">
+                                <div class="specialty-icon" style="background-color: #000000; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
+                                    <i class="fa-solid fa-laptop fa-3x" style="color: #FFD43B;"></i>
+                                </div>
+                                <h2 style="color: #1C1C1C; font-size: 1.75rem; font-weight: bold;">Web Design</h2>
+                                <p class="specialty-description" style="color: #1C1C1C;">Creating visually appealing websites that leave a lasting impression and enhance user experience.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Motion Graphics -->
+                        <div class="col  mb-5">
+                            <div class="specialty-card text-center hover-effect" style="background-color: #F8F5E5; padding: 20px; border-radius: 15px;">
+                                <div class="specialty-icon" style="background-color: #FFD43B; padding: 20px; border-radius: 50%; margin-bottom: 15px;">
+                                    <i class="fa-solid fa-video fa-3x" style="color: #1C1C1C;"></i>
+                                </div>
+                                <h2 style="color: #1C1C1C; font-size: 1.75rem; font-weight: bold;">Motion Graphics</h2>
+                                <p class="specialty-description" style="color: #1C1C1C;">Designing engaging motion graphics that bring content to life and captivate your audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End My Specialties Section -->
+           
+           
+           
+           
+                <!-- Start Projects Section -->
+           <k id="Projects">
             <div class="container-fluid font">
+                <div class="row mb-5">
+                    <h1 class="text-center" style="background-color: #000000; color: #FFD43B; padding: 20px; border-radius: 10px; text-transform: uppercase;">
+                        Projects <i class="fa-regular fa-folder fa-bounce fa-xs" style="color: #FFD43B;"></i></h1>
+                </div>
                 <div class="row">
-                        <div class="col-5 mt-3">
-                            <img src="images/Logo png fastie design.png" class="widh-logo mg-l">
-                        </div>
-                        <div class="col bg-dark mt-4 mb-4 padd">
-                            <h5><a href="#Acceuil" class="yellow  souligne">Acceuil</a></h5>
-                        </div>
-                        <div class="col bg-dark mt-4 mb-4">
-                            <h5><a href="#About" class="yellow none">About</a></h5>
-                           </div>
-                           <div class="col bg-dark mt-4 mb-4">
-                            <h5><a href="#Projects" class="yellow none">projects</a></h5>
-                           </div>
-                           <div class="col mt-4 mb-4 bg-dark">
-                            <h5><a href="#My Specialties" class="yellow none">My Specialties</a></h5>
-                           </div>
-                           <div class="col mt-4 mb-4 bg-dark">
-                            <h5> <a href="#Contact" class="yellow none">Contact</a></h5>
-                           </div>
-                           <hr>
-                    </div>
-                    
-                        <div class="row">
-                            <div class="col mt-5 mg">
-                                <h1 class="yellow big">Hello! <i class="fa-solid fa-hand-sparkles fa-shake fa-xs" style="color: #FFD43B;"></i></h1>
-                                <h1 > I'm Hanin Marmouch</h1>
-                                <h2> Graphic Designer,Based in Tunisia</h2>
-                                <p class="mt-4 size shadow mg background-jau"> Graphic Designer - Web Designer - Motion
-                                    Designer - UI/UX Designer - Web Developer
-                                    - Community manager
-                                    </p>
-                                    <a href="#Projects" class="btn sizee mt-2 cotour">Projects</a>
-                                    <button type="submit" class="btn btn-dark sizee mt-2">Contact</button>
+                    <!-- Project 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-item">
+                            <div class="image-container">
+                                <img src="images/Papeterie FASTIE DESIGN_flyer.jpg" class="img-fluid hov-img" alt="Project 1">
+                                <div class="overlay text-center">
+                                    <h5 class="project-title">Papeterie FASTIE Design</h5>
+                                </div>
                             </div>
-                            <div class="col">
-                                <img src="images/splash-yellow-dye.png" class="si-ze mb-5 pad-l">
-                            </div>
-                            <hr>
                         </div>
                     </div>
-                </section>
-                    
-            <!--End Acceuil-->
-            <!--Start section About-->
-            <section id="About">
-                <div class="container-fluid font">
-                    <div class="row">
-                        <div class="col-5 mt-3">
-                            <img src="images/decorative-yellow-watercolor-splash-brush-stroke-design-vector.png" class="small">
+        
+                    <!-- Project 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-item">
+                            <div class="image-container">
+                                <img src="images/banner bleu.jpg" class="img-fluid hov-img" alt="Project 2">
+                                <div class="overlay text-center">
+                                    <h5 class="project-title">Banner</h5>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-5 mar mt-3">
-                            <h1 class="yellow big">About Me</h1>
-                            <h1 class=" s mt-2">I am Hanin Marmouch, <a>Graphic Designer</a> </h1>
-                            <p class="font-size background-jau mt-4">Passionate about creation and design, with 3 years of practice in the higher institute of fine arts and my training in computer graphics, I had the opportunity to work on various projects that helped me deepen and enrich and develop my skills in design, digital marketing and web development.</p>
-                            <button type="submit" class="btn btn-dark sizee mt-2 cotour"> Contact</button>
+                    </div>
+        
+                    <!-- Project 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-item">
+                            <div class="image-container">
+                                <img src="images/BANNER 2F.jpg" class="img-fluid hov-img" alt="Project 3">
+                                <div class="overlay text-center">
+                                    <h5 class="project-title">Banner</h5>
+                                </div>
+                            </div>
                         </div>
-                        <hr>
+                    </div>
                 </div>
+                <div class="row mt-4">
+                    <!-- Project 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-item">
+                            <div class="image-container">
+                                <img src="images/Affiche Horizon F.jpg" class="img-fluid hov-img" alt="Project 4">
+                                <div class="overlay text-center">
+                                    <h5 class="project-title">Horizon Flyer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-item">
+                            <div class="image-container">
+                                <img src="images/Conception Graphique_Flyer.jpg" class="img-fluid hov-img" alt="Project 5">
+                                <div class="overlay text-center">
+                                    <h5 class="project-title">Graphic Design Flyer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Project 6 (Logo) -->
+                    <div class="col-md-4 mb-4">
+                        <div class="project-item">
+                            <div class="image-container">
+                                <img src="images/logo.JPG" class="img-fluid hov-img" alt="Logo">
+                                <div class="overlay text-center">
+                                    <h5 class="project-title">Logo</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="yellow-line mt-5">
             </div>
-            </section>
-             <!--End Section About-->
-            <!--section "Projects"-->
-            <section id="Projects">
-                <div class="container-fluid font">
-                    <div class="row">
-                        <h1 class="text-center yellow big">Projects</h1>
-                        <div class="col mt-4 mg-P">
-                            <img src="images/Papeterie FASTIE DESIGN_flyer.jpg" class="im-g">
-                        </div>
-                        <div class="col mt-5 mg-B">
-                            <img src="images/BANNER 2F.jpg" class="im-O">
-                        </div>
-                        <div class="col mt-4 mg-B">
-                            <img src= "images/Plan de travail 2.png" class="im-N mt-4">
-                        </div>
-                        </div>
-                        <div class="row">
-                            <div class="col mt-5 mg-P">
-                                <img src="images/Affiche Horizon F.jpg" class="im-S">
-                            </div>
-                            <div class="col mb-5 mg-B">
-                                <img src= "images/Conception Graphique_Flyer.jpg"class="im-L mb-4 ">
-                            </div>
-                            <div class="col mt-5 mg-B">
-                                <img src= "images/Papeterie FASTIE DESIGN-01.jpg"class="im-Z">
-                            </div>
-                            <hr>
-                            </div>
+        <!-- End Projects Section -->
+         
+        
+        <!-- Start Contact Section -->
+<k id="Contact" class="contact-section bg-dark text-white">
+    <div class="container-fluid font bg-dark">
+        <h1 class="text-center bg-dark yellow big mb-4">Contact <i class="fa-solid fa-paper-plane fa-bounce" style="color: #FFD43B;"></i></h1>
+        
+         <div class="row justify-content-center bg-dark">
+            <div class="col-8 ">
+                <form action="#" method="POST">
+                   
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control inputll" id="name" placeholder="Enter your name" required>
                     </div>
-            </section>
-             <!--End Section projects-->
-            <!--Start section My Specialties -->
-            <section id="My Specialties">
-                <div class="container-fluid font">
-                    <div class="row">
-                        <h1 class="text-center yellow big">My Specialties <i class="fa-solid fa-check fa-beat-fade fa-sm" style="color: #000000;"></i></h1>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control inputll" id="email" placeholder="Enter your email" required>
                     </div>
-                        <div class="row mt-5">
-                            <div class="col mt-4 mg-P background">
-                                <h2 class="black text-center  mt-5 mb-5">Graphic Design <i class="fa-solid fa-pen-nib fa-lg mt-5" style="color: #000000;"></i></h2>
-                            </div>
-                            <div class="col mt-4 bg-dark mg-P">
-                                <h2 class="white text-center mt-5 mb-5">Web development<i class="fa-solid fa-code fa-lg mt-5" style="color: #ffffff;"></i></h2>
-                                
-                            </div>
-                            <div class="col mt-4 background mg-P mg-B  ">
-                                <h2 class="black text-center  mt-5 mb-5">UX/UI design <i class="fa-brands fa-figma fa-lg mt-5" style="color: #000000;"></i></h2>
-                                
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col mt-4 mg-P background">
-                                <h2 class="black text-center  mt-5 mb-5">digital marketing <i class="fa-solid fa-chart-simple fa-xl mt-5" style="color: #000000;"></i></h2>
-                            </div>
-                            <div class="col mt-4 bg-dark mg-P">
-                                <h2 class="white text-center  mt-5 mb-5">Web Design <i class="fa-solid fa-laptop fa-lg mt-5" style="color: #ffffff;"></i></h2>
-                            </div>
-                            <div class="col mt-4 background mg-P mg-B">
-                                <h2 class="black text-center  mt-5 mb-5">Motion Design <i class="fa-solid fa-video fa-xl mt-5" style="color: #000000;"></i></h2>
-                            </div>
-                        </div>
-                        <hr>
-                </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control inputll" id="message" rows="4" placeholder="Write your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-yellow w-100 btn-submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5 text-center bg-dark"> 
+            <div class="col">
+                <h4><i class="fa-solid fa-phone fa-2xl"></i></h4>
+                <p class="contact-info">+216 51 712 127</p>
+            </div>
+            <div class="col">
+                <h4><i class="fa-solid fa-location-dot fa-2xl"></i></h4>
+                <p class="contact-info">Monastir, Tunisia</p>
+            </div>
+            <div class="col">
+                <h4><i class="fa-solid fa-envelope fa-2xl"></i></h4>
+                <p class="contact-info">Marmouchhanin@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+<!-- End Contact Section -->
+
         </main>
+        
         <footer>
-            <!-- place footer here -->
-            <div class="footer" id="Contact" style="background-color: black; color: yellow; padding: 20px; text-align: center;">
+            <div class="footer" id="Contact" style="background-color: black; color: yellow; padding: 10px; text-align: center;">
                 &copy; 2025 Mon Site Web | <a href="#" style="color: white;">Mentions légales</a> | <a href="#" style="color: white;">Contact</a>
                 <div style="margin-top: 10px;">
                     <a href="https://www.facebook.com/hanin.marmouch.52" style=" margin: 0 10px;"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/hanin3338/" style=" margin: 0 10px;"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/hanin_marmouch/" style=" margin: 0 10px;"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram.png" alt="Instagram"></a>
                     <a href="#" style="margin: 0 10px;"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn"></a>
                 </div>
             </div>
